@@ -108,3 +108,5 @@ for a in x:
     y.append(int(random.random()*10))
 plt.plot(x,y)
 plt.show()
+
+#Add something and push using SSH

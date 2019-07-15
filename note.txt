@@ -1,0 +1,2 @@
+fc-list : linux 获取所有字符集
+fc-list : lang=zh 支持中文

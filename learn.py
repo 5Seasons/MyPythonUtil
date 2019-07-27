@@ -98,3 +98,11 @@ sys.argv[0]
 
 import scipy
 # 包寻找的顺序，当前文件夹，path目录，python自带包。
+a=[1,2,4]
+b=[1,3,4]
+for i in range(max(len(a),len(b))):
+    print(a[i],b[i],"\b",end='')
+    print(' ',end='')
+pass
+
+[print(a[i],b[i],' ',end='') for i in range(len(a))]

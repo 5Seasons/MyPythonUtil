@@ -1,0 +1,13 @@
+import urllib.request
+
+stock_list = ['600001','300001','000001']
+for code in stock_list:
+    
+    if code[0] == '6':
+        url = 'http://quotes.money.163.com/service/chddata.html?code=0' + code + \
+              '&end=20191101&fields=TCLOSE;HIGH;LOW;TOPEN;LCLOSE;CHG;PCHG;TURNOVER;VOTURNOVER;VATURNOVER;TCAP;MCAP'
+    else:
+        url = 'http://quotes.money.163.com/service/chddata.html?code=1' + code + \
+              '&end=20191101&fields=TCLOSE;HIGH;LOW;TOPEN;LCLOSE;CHG;PCHG;TURNOVER;VOTURNOVER;VATURNOVER;TCAP;MCAP'
+    urllib.request.urlretrieve(url, 'C:\\Users\\zwang103\\Desktop\\zwang103\\stock\\' + code + '.csv') 
+    print("finished " + code)
